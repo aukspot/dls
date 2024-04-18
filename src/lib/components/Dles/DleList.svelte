@@ -49,6 +49,27 @@
     }
     return result
   })
+
+  // order matters - determines priority when placing a dle in its main category.
+  const categories = [
+    "time",
+    "sports",
+    "trivia",
+    "geography",
+    "video games",
+    "colors",
+    "audio",
+    "movies",
+    "words",
+    "prices",
+    "math",
+    "logic",
+    "numbers",
+  ]
+
+  function set_dles_by_category() {}
+
+  $: dles_by_category = set_dles_by_category()
 </script>
 
 <div
